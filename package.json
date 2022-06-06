@@ -1,0 +1,43 @@
+{
+  "name": "BeaconTripIt",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@react-native-community/masked-view": "^0.1.11",
+    "@react-native-firebase/app": "^14.11.0",
+    "@react-native-firebase/database": "^14.11.0",
+    "@react-native-firebase/firestore": "^14.11.0",
+    "@react-navigation/native": "^6.0.6",
+    "@react-navigation/stack": "^6.0.11",
+    "react": "17.0.2",
+    "react-native": "0.66.4",
+    "react-native-bluetooth-state": "^2.0.0",
+    "react-native-gesture-handler": "^2.2.0",
+    "react-native-kontaktio": "^3.1.0",
+    "react-native-safe-area-context": "^3.4.1",
+    "react-native-screens": "^3.13.1",
+    "react-native-video": "^5.2.0",
+    "react-navigation": "^4.4.4",
+    "react-navigation-stack": "^2.10.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.7",
+    "@babel/runtime": "^7.16.7",
+    "@react-native-community/eslint-config": "^3.0.1",
+    "babel-jest": "^27.4.6",
+    "eslint": "^8.7.0",
+    "jest": "^27.4.7",
+    "metro-react-native-babel-preset": "^0.66.2",
+    "react-test-renderer": "17.0.2"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}

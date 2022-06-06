@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "858103579183",
+    "firebase_url": "https://beacontripit-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "beacontripit",
+    "storage_bucket": "beacontripit.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:858103579183:android:fe11a6c2176c7204d8bcda",
+        "android_client_info": {
+          "package_name": "com.beacontripit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "858103579183-t8g5md4uk9pr9vl18is6vhv3unov3j3t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8cJLydfQIFYxzDC_X2-uCdgHidI24mSY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "858103579183-t8g5md4uk9pr9vl18is6vhv3unov3j3t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
