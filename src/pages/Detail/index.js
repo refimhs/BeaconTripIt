@@ -89,7 +89,6 @@ const Detail = ({route, navigation}) => {
               <Text>
                   {data.description}
               </Text>
-              
             </ScrollView>
           </SafeAreaView>
         </View>

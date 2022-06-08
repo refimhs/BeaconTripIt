@@ -1,6 +1,6 @@
 import { createStackNavigator } from "@react-navigation/stack";
 import React from "react";
-import { BeaconPage, Detail, Splash } from "../pages";
+import { BeaconPage, Detail, Splash, FindObject } from "../pages";
 import Home from "../pages/Home";
 
 const Stack = createStackNavigator();
@@ -12,6 +12,7 @@ const Router = () => {
             <Stack.Screen name="Home" component={Home} />
             <Stack.Screen name="Detail" component={Detail} />
             <Stack.Screen name="BeaconPage" component={BeaconPage} />
+            <Stack.Screen name="FindObject" component={FindObject} />
         </Stack.Navigator>
     )
 }

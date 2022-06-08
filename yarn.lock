@@ -1276,7 +1276,7 @@
   "resolved" "https://registry.npmjs.org/@react-native/assets/-/assets-1.0.0.tgz"
   "version" "1.0.0"
 
-"@react-native/normalize-color@^2.0.0":
+"@react-native/normalize-color@*", "@react-native/normalize-color@^2.0.0":
   "integrity" "sha512-Wip/xsc5lw8vsBlmY2MO/gFLp3MvuZ2baBZjDeTjjndMgM0h5sxz7AZR62RDPGgstp8Np7JzjvVqVT7tpFZqsw=="
   "resolved" "https://registry.npmjs.org/@react-native/normalize-color/-/normalize-color-2.0.0.tgz"
   "version" "2.0.0"
@@ -1418,6 +1418,11 @@
   "version" "7.14.2"
   dependencies:
     "@babel/types" "^7.3.0"
+
+"@types/geojson@^7946.0.7":
+  "integrity" "sha512-1rkryxURpr6aWP7R786/UQOkJ3PcpQiWkAXBmdWc7ryFWqN6a4xfK7BtjXvFBKO9LjQ+MWQSWxYeZX1OApnArA=="
+  "resolved" "https://registry.npmjs.org/@types/geojson/-/geojson-7946.0.8.tgz"
+  "version" "7946.0.8"
 
 "@types/graceful-fs@^4.1.2":
   "integrity" "sha512-anKkLmZZ+xm4p8JWBf4hElkM4XR+EZeA2M9BAkkTldmcyDY4mbdIJnRghDJH3Ov5ooY7/UAoENtmdMSkaAd7Cw=="
@@ -2609,6 +2614,15 @@
   "resolved" "https://registry.npmjs.org/depd/-/depd-1.1.2.tgz"
   "version" "1.1.2"
 
+"deprecated-react-native-prop-types@^2.3.0":
+  "integrity" "sha512-pWD0voFtNYxrVqvBMYf5gq3NA2GCpfodS1yNynTPc93AYA/KEMGeWDqqeUB6R2Z9ZofVhks2aeJXiuQqKNpesA=="
+  "resolved" "https://registry.npmjs.org/deprecated-react-native-prop-types/-/deprecated-react-native-prop-types-2.3.0.tgz"
+  "version" "2.3.0"
+  dependencies:
+    "@react-native/normalize-color" "*"
+    "invariant" "*"
+    "prop-types" "*"
+
 "destroy@~1.0.4":
   "integrity" "sha1-l4hXRCxEdJ5CBmE+N5RiBYJqvYA="
   "resolved" "https://registry.npmjs.org/destroy/-/destroy-1.0.4.tgz"
@@ -3653,7 +3667,7 @@
     "has" "^1.0.3"
     "side-channel" "^1.0.4"
 
-"invariant@^2.2.4":
+"invariant@*", "invariant@^2.2.4":
   "integrity" "sha512-phJfQVBuaJM5raOpJjSfkiD6BpbCE4Ns//LaXl6wGYtUBY83nWS6Rf9tXm2e8VaK60JEjYldbPif/A2B1C2gNA=="
   "resolved" "https://registry.npmjs.org/invariant/-/invariant-2.2.4.tgz"
   "version" "2.2.4"
@@ -5733,7 +5747,7 @@
     "kleur" "^3.0.3"
     "sisteransi" "^1.0.5"
 
-"prop-types@^15.7.2":
+"prop-types@*", "prop-types@^15.7.2":
   "integrity" "sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg=="
   "resolved" "https://registry.npmjs.org/prop-types/-/prop-types-15.8.1.tgz"
   "version" "15.8.1"
@@ -5858,6 +5872,14 @@
   "resolved" "https://registry.npmjs.org/react-native-kontaktio/-/react-native-kontaktio-3.1.0.tgz"
   "version" "3.1.0"
 
+"react-native-maps@^0.31.1":
+  "integrity" "sha512-vipeOPykqLRMCLcLUCZEB+cTdNSlq88NLb0jChY4UGTY5fgOS7GYWkfswy6bW1ayTRLxJS3zpMGFDUY59/ZrXA=="
+  "resolved" "https://registry.npmjs.org/react-native-maps/-/react-native-maps-0.31.1.tgz"
+  "version" "0.31.1"
+  dependencies:
+    "@types/geojson" "^7946.0.7"
+    "deprecated-react-native-prop-types" "^2.3.0"
+
 "react-native-safe-area-context@^3.4.1", "react-native-safe-area-context@>= 0.6.0", "react-native-safe-area-context@>= 3.0.0":
   "integrity" "sha512-xfpVd0CiZR7oBhuwJ2HcZMehg5bjha1Ohu1XHpcT+9ykula0TgovH2BNU0R5Krzf/jBR1LMjR6VabxdlUjqxcA=="
   "resolved" "https://registry.npmjs.org/react-native-safe-area-context/-/react-native-safe-area-context-3.4.1.tgz"
@@ -5887,7 +5909,7 @@
     "prop-types" "^15.7.2"
     "shaka-player" "^2.5.9"
 
-"react-native@*", "react-native@>=0.42.0", "react-native@>=0.57", "react-native@0.66.4":
+"react-native@*", "react-native@>= 0.51", "react-native@>=0.42.0", "react-native@>=0.57", "react-native@0.66.4":
   "integrity" "sha512-9vx5dlSfQlKbbDtr8+xMon6qsmSu7jvjdXWZpEKh3XVKpUidbbODv7048gwVKX8YAel1egeR7hN8vzSeI6ssTw=="
   "resolved" "https://registry.npmjs.org/react-native/-/react-native-0.66.4.tgz"
   "version" "0.66.4"
@@ -5963,7 +5985,7 @@
     "react-shallow-renderer" "^16.13.1"
     "scheduler" "^0.20.2"
 
-"react@*", "react@^16.0.0 || ^17.0.0", "react@^16.8.0 || ^17.0.0", "react@^17.0.0", "react@>=16.0", "react@17.0.2":
+"react@*", "react@^16.0.0 || ^17.0.0", "react@^16.8.0 || ^17.0.0", "react@^17.0.0", "react@>= 16.0", "react@>=16.0", "react@17.0.2":
   "integrity" "sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA=="
   "resolved" "https://registry.npmjs.org/react/-/react-17.0.2.tgz"
   "version" "17.0.2"

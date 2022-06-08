@@ -60,9 +60,6 @@ import {
           <Text 
             style={{fontFamily:'Opens Sans', fontSize:36, marginLeft: 5, color:'#003468'}}
           >Trip It</Text>
-          <View style={{justifyContent: 'center'}}>
-            <Search_Teks/>
-          </View>
           <View>
             <Photo_Home/>
           </View>
@@ -86,6 +83,9 @@ import {
               sentuhan pengaruh baik budaya Cina dan Eropa
               maupun lokal.</Text>
           </View>
+          <View>
+            <Find_Object navigation={navigation}/>
+          </View>
         </View>
       </SafeAreaView>
     );
@@ -105,7 +105,7 @@ import {
             marginRight: 5,
             marginTop: 5,
             borderRadius: 10,
-            
+            justifyContent: 'center'
           }}>
         <Text style={{color:'#FFFFFF', fontSize: 16, textAlign:'center'}}>You are in :</Text>
         <Text style={{color:'#FFFFFF', fontSize: 24, fontWeight: 'bold', textAlign:'center'}}>Kampung Kemasan</Text>
@@ -116,17 +116,26 @@ import {
     )
   }
   
-  const Search_Teks = () => {
-    return <View>
-      <TextInput style={{
-        borderWidth: 1, 
-        borderColor:'#003468',
-        borderRadius: 4,
-        marginLeft: 5,
-        marginTop: 5,
-        marginRight: 5
-        }}/>
-    </View>
+  const Find_Object = ({navigation}) => {
+    return (
+      <View> 
+        <TouchableOpacity 
+          onPress={() => navigation.navigate('FindObject')}  
+          style={{
+            backgroundColor: '#D2E9FF', 
+            paddingTop: 20,
+            paddingBottom: 10,
+            paddingHorizontal: 20,
+            marginLeft: 5,
+            marginRight: 5,
+            marginTop: 5,
+            borderRadius: 10,
+            justifyContent: 'center'
+          }}>
+        <Text style={{color:'#003468', fontSize: 16, textAlign:'center'}}>Find Object</Text>
+        </TouchableOpacity>
+      </View>
+    )
   }
   
   const Photo_Home = () => {

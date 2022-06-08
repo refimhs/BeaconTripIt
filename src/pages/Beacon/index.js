@@ -64,7 +64,7 @@ const BeaconPage = ({navigation}) => {
       } else {
         Alert.alert(
           'Permission error',
-          'Location permission not granted. Cannot scan for beacons',
+          'Bluetooth permission not granted. Cannot scan for beacons',
           [{text: 'OK', onPress: () => console.log('OK Pressed')}],
           {cancelable: false},
         );
