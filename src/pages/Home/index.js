@@ -57,9 +57,12 @@ import {
     return (
       <SafeAreaView style={backgroundStyle}>
         <View style={{marginTop: 20}}>
-          <Text 
-            style={{fontFamily:'Opens Sans', fontSize:36, marginLeft: 5, color:'#003468'}}
-          >Trip It</Text>
+          <Text style={{fontFamily:'Opens Sans', fontSize:36, marginLeft: 5, color:'#003468'}}>
+            Trip It
+          </Text>
+          <View>
+            <Find_Object navigation={navigation}/>
+          </View>
           <View>
             <Photo_Home/>
           </View>
@@ -82,9 +85,6 @@ import {
               motif bangungan di kampung kemasan mendapat 
               sentuhan pengaruh baik budaya Cina dan Eropa
               maupun lokal.</Text>
-          </View>
-          <View>
-            <Find_Object navigation={navigation}/>
           </View>
         </View>
       </SafeAreaView>
@@ -123,7 +123,7 @@ import {
           onPress={() => navigation.navigate('FindObject')}  
           style={{
             backgroundColor: '#D2E9FF', 
-            paddingTop: 20,
+            paddingTop: 10,
             paddingBottom: 10,
             paddingHorizontal: 20,
             marginLeft: 5,
